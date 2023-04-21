@@ -20,7 +20,7 @@ function App() {
         setSelectedPage(SelectedPage.Home);
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
-    }
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -38,7 +38,7 @@ function App() {
       <ContactUs setSelectedPage={setSelectedPage} />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
